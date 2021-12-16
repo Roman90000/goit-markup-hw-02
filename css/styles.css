@@ -3,7 +3,6 @@
   --primary-color-title: #212121;
   --primary-color-paragraph: #757575;
   --color-link: #2196f3;
-  --color-link-hover-focus: ;
 }
 
 body {
@@ -17,7 +16,7 @@ body {
   text-decoration: none;
 }
 
-/* Шапка */
+/* ----------------------------Шапка--------------------- */
 .header-web {
   color: #2196f3;
 }
@@ -27,42 +26,120 @@ body {
   letter-spacing: 0.03em;
   text-decoration: none;
   color: black;
+  font-family: Raleway;
+  font-weight: 700;
 }
 .header-item > a {
   color: var(--primary-color-title);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 .header-item > a:hover,
 .header-item > a:focus {
   color: var(--color-link);
 }
+
 .link {
   color: var(--primary-color-paragraph);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
 }
 .link:hover,
 .link:focus {
   color: var(--color-link);
 }
-
-/* Герой */
+/* ------------------------Герой--------------------------------- */
 .hero {
   background-color: #2f303a;
 }
 .hero-title {
-  color: #ffffff;
+  color: var(--primary-body-color);
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+}
+.hero-button {
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  font-weight: bold;
+  color: var(--primary-body-color);
+  background-color: var(--color-link);
+}
+.button-space {
+  text-align: center;
 }
 
-/* Чем мы занимаемся */
+/*-----------------------Чем мы занимаемся------------------------ */
 .list-title {
   color: var(--primary-color-paragraph);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
-.title {
+.heading {
   color: #212121;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.photo-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 
-/* Наша команда */
+/* --------------------------Наша команда------------------------ */
 .team-names {
   color: var(--primary-color-title);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 .team-position {
   color: var(--primary-color-paragraph);
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* ---------------------------Подвал----------------------- */
+.footer {
+  background-color: #2f303a;
+}
+.header-logo-footer {
+  color: #ffffff;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  font-family: Raleway;
+  font-weight: 700;
+}
+.address {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  font-style: normal;
+}
+.info {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
 }
