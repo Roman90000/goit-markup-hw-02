@@ -29,7 +29,7 @@ body {
   font-family: Raleway;
   font-weight: 700;
 }
-.header-item > a {
+.link {
   color: var(--primary-color-title);
   font-weight: 500;
   font-size: 14px;
@@ -40,13 +40,15 @@ body {
 .header-item > a:focus {
   color: var(--color-link);
 }
-
-.link {
+.header-item > a .link {
   color: var(--primary-color-paragraph);
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
+}
+.header-item-active > .link {
+  color: var(--color-link);
 }
 .link:hover,
 .link:focus {
@@ -71,6 +73,9 @@ body {
   font-weight: bold;
   color: var(--primary-body-color);
   background-color: var(--color-link);
+}
+.hero-button:hover {
+  background-color: #188ce8;
 }
 .button-space {
   text-align: center;
@@ -145,9 +150,27 @@ body {
 }
 
 /* ---------------------button portfolio---------------------" */
-.button portfolio {
+.button {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
+  font-family: Roboto;
+  background-color: #f5f4fa;
+}
+.button:hover {
+  background-color: var(--color-link);
+}
+/* -------------------- Основной контент portfolio-------------- */
+.portfolio heading {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.portfolio paragraph {
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: var(--primary-color-paragraph);
 }
