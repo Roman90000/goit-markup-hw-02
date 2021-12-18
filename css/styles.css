@@ -167,8 +167,9 @@ body {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  color: var(--primary-color-title);
 }
-.portfolio paragraph {
+.portfolio-p {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
