@@ -3,6 +3,11 @@
   --primary-color-title: #212121;
   --primary-color-paragraph: #757575;
   --color-link: #2196f3;
+  --hero-button-hover: #188ce8;
+  --footer-hero-background-color: #2f303a;
+  --button-background-color: #f5f4fa;
+  --header-logo: black;
+  --header-web: #2196f3;
 }
 
 body {
@@ -18,14 +23,14 @@ body {
 
 /* ----------------------------Шапка--------------------- */
 .header-web {
-  color: #2196f3;
+  color: var(--header-web);
 }
 .header-logo {
   font-size: 26px;
   line-height: 31px;
   letter-spacing: 0.03em;
   text-decoration: none;
-  color: black;
+  color: var(--header-logo);
   font-family: Raleway, sans-serif;
   font-weight: 700;
 }
@@ -56,7 +61,7 @@ body {
 }
 /* ------------------------Герой--------------------------------- */
 .hero {
-  background-color: #2f303a;
+  background-color: var(--footer-hero-background-color);
 }
 .hero-title {
   color: var(--primary-body-color);
@@ -75,7 +80,7 @@ body {
   background-color: var(--color-link);
 }
 .hero-button:hover {
-  background-color: #188ce8;
+  color: var(--hero-button-hover);
 }
 .button-space {
   text-align: center;
@@ -89,7 +94,7 @@ body {
   letter-spacing: 0.03em;
 }
 .heading {
-  color: #212121;
+  color: var(--primary-color-title);
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
@@ -123,10 +128,10 @@ body {
 
 /* ---------------------------Подвал----------------------- */
 .footer {
-  background-color: #2f303a;
+  background-color: var(--footer-hero-background-color);
 }
 .header-logo-footer {
-  color: #ffffff;
+  color: var(--primary-body-color);
   font-size: 26px;
   line-height: 31px;
   letter-spacing: 0.03em;
@@ -138,7 +143,7 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--primary-body-color);
   font-style: normal;
 }
 .info {
@@ -156,20 +161,24 @@ body {
   line-height: 1.62;
   letter-spacing: 0.03em;
   font-family: Roboto, sans-serif;
-  background-color: #f5f4fa;
+  background-color: var(--button-background-color);
 }
 .button:hover {
   background-color: var(--color-link);
 }
+.button,
+.hero-button {
+  cursor: pointer;
+}
 /* -------------------- Основной контент portfolio-------------- */
-.list > .portfolio-h2 {
+.list > .portfolio-title {
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--primary-color-title);
 }
-.portfolio-p {
+.portfolio-text {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
