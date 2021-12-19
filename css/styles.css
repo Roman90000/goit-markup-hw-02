@@ -80,7 +80,7 @@ body {
   background-color: var(--color-link);
 }
 .hero-button:hover {
-  color: var(--hero-button-hover);
+  background-color: var(--hero-button-hover);
 }
 .button-space {
   text-align: center;
@@ -162,9 +162,11 @@ body {
   letter-spacing: 0.03em;
   font-family: Roboto, sans-serif;
   background-color: var(--button-background-color);
+  color: var(--primary-color-title);
 }
 .button:hover {
   background-color: var(--color-link);
+  color: var(--primary-body-color);
 }
 .button,
 .hero-button {
